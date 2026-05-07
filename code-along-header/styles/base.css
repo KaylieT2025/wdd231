@@ -13,6 +13,7 @@ header img{
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 5px;
 }
 
 header span{
@@ -23,13 +24,19 @@ header span{
 
 .hamburger{
 
-    background-color: none;
+    background: none;
     border: none;
     color: #3d405b;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hamburger::after{
     content: "\2630";
     font-size: 2rem;
+}
+
+.hamburger.show::after{
+
+    content: "\00D7";
 }
