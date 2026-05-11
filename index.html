@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kaylie Tapia">
-    <meta name="description" content="A home page for the course of WDD 231, to be bulit with responsive design.">
+    <meta name="description" content="A home page for the course WDD 231 built with responsive design.">
     <title>Course Home Page</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
@@ -17,7 +17,7 @@
     <header>
         <img src="images/home.svg" alt="Home logo for landing page" width="512" height="512">
         <span>Kaylie Tapia</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Hamburger menu."></button>
     </header>
 
     <nav>
@@ -33,10 +33,17 @@
 
         <section class="about-me">
             <h2>About Me</h2>
+            <p>I am currently studying for my degree in software development. 
+                I love movies. My favorite are suspenseful and thrillers. 
+                One of my favorite outdoor activities is skateboarding. 
+                I enjoy creating art and learning new art forms as well.
+                Any time I can get my hands on pencils and paints is a good day.
+            </p>
         </section>
 
         <section class="student-photo">
             <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Profile image of Kaylie." height="400" width="300">
         </section>
 
         <section class="certificate">
@@ -50,9 +57,8 @@
             <a href="https://github.com/KaylieT2025/wdd231.git" target="_blank"><img src="images/github.svg" alt="GitHub Logo" width="24" height="24"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-circle.svg" alt="Instagram Logo" width="24" height="24"></a>
         </div>
-        <p>Copywrite and current year</p>
-        <p>Kayie Tapia</p>
-        <p>Georgia, USA</p>
+        <p>&copy; <span id="currentYear"></span> Kaylie Tapia | Georgia, USA</p>
+        <p id="lastModified"></p>
     </footer>
 
     
