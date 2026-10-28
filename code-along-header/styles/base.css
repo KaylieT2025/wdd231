@@ -47,3 +47,38 @@ header span{
     content: "\00D7";
 
 }
+
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a{
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current{
+
+background-color: #eee;
+}
+
+.navigation a:hover{
+    background-color: var(--primary-color);
+}
+
+h1{
+    margin-left: 10px;
+}
