@@ -1,9 +1,61 @@
+/*Site colors and font.*/
+
 :root{
     --apricot-cream: #f6d8aeff;
     --charcoal-blue: #2e4057ff;
 }
 
+body {
+    font-family: "Cantarell", sans-serif;
+    background-color: var(--apricot-cream);
+}
+
+/*Setting site to 0.*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header.*/
+
 header{
 
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+    align-items: end;
+    border-bottom: solid 2px var(--charcoal-blue);
+    background-color: var(--apricot-cream);
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span{
+    font-size: 1.5rem;
+    color: var(--charcoal-blue);
+}
+
+/*Navigation.*/
+
+.navigation ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navigation a{
+    display: block;
+    text-decoration: none;
+    color: var(--charcoal-blue);
+    padding: 0.8rem 10px;
+    border-bottom: solid var(--charcoal-blue);
     
 }
+
