@@ -8,6 +8,13 @@
 body {
     font-family: "Cantarell", sans-serif;
     background-color: var(--apricot-cream);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
 }
 
 /*Setting site to 0.*/
@@ -97,4 +104,32 @@ header span{
 
 h1{
     margin-left: 10px;
+}
+
+/*Main*/
+
+main h1{
+ color: var(--charcoal-blue);
+}
+
+/*Footer*/
+
+p{
+    color: var(--charcoal-blue);
+}
+
+footer{
+    text-align: center;
+}
+
+footer img{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer p{
+    background-color: var(--charcoal-blue);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
