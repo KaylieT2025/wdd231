@@ -53,9 +53,48 @@ header span{
 .navigation a{
     display: block;
     text-decoration: none;
-    color: var(--charcoal-blue);
+    color: white;
     padding: 0.8rem 10px;
     border-bottom: solid var(--charcoal-blue);
     
 }
 
+.hamburger{
+    background: none;
+    border: none;
+    color: var(--charcoal-blue);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+
+    content: "\00D7";
+
+}
+
+.navigation {
+    display: none;
+    background-color: var(--charcoal-blue);
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation li.current-class{
+    background-color: #fff;
+}
+
+.navigation a:hover{
+    background-color: var(--apricot-cream);
+    color: black;
+}
+
+h1{
+    margin-left: 10px;
+}

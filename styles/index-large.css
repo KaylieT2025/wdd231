@@ -1,0 +1,34 @@
+@media only screen and (min-width: 30rem){
+
+    :root {
+        --apricot-cream: #f6d8aeff;
+        --charcoal-blue: #2e4057ff;
+    }
+
+    body {
+        font-family: "Cantarell", sans-serif;
+        background-color: var(--apricot-cream);
+    }
+
+    header{
+        grid-template-columns: 24px auto;
+    }
+    .navigation{
+        display: block;
+        background-color: var(--charcoal-blue);   
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation a{
+        border: none;
+        color: white;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+}
