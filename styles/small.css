@@ -126,6 +126,9 @@ footer img{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.socials{
+    padding: 1rem;
+}
 
 footer p{
     background-color: var(--charcoal-blue);
