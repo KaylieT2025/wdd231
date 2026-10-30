@@ -42,7 +42,7 @@ header span{
     color: var(--charcoal-blue);
 }
 
-/*Navigation.*/
+/*Navigation and hamburger menu.*/
 
 .navigation ul{
    list-style-type: none;
