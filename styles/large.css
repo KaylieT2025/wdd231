@@ -1,4 +1,4 @@
-@media only screen and (min-width: 30rem){
+@media only screen and (max-width: 48rem){
 
     /*Page color and font.*/
     :root {
@@ -11,26 +11,56 @@
         background-color: var(--apricot-cream);
     }
 
+    /*Main for Mobile layout*/
+
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    main h1 {
+        grid-column: 1;
+
+    }
+    
+    .course-work {
+        grid-column: 1;
+    }
+
     /*Header, navigation, and hamburger.*/
     header{
-        grid-template-columns: 24px auto;
+        grid-template-columns: 24px auto 44px;
     }
     .navigation{
-        display: block;
+        display: none;
         background-color: var(--charcoal-blue);   
     }
 
-    .navigation ul{
-        display: flex;
+    .navigation.show{
+        display: block;
     }
 
-    .navigation a{
+    .navigation ul{
+        display: block;
+    }
+
+    /*.navigation a{
         border: none;
         color: white;
-    }
+    }*/
 
     .hamburger{
-        display: none;
+        display: block;
     }
 
-}
+    /*Cards for Web Development Courses*/
+
+    .course-btns{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .course-list{
+        grid-template-columns: 1fr;
+    }
+
+}    

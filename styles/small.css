@@ -50,6 +50,7 @@ header span{
 /*Navigation and hamburger menu.*/
 
 .navigation ul{
+    display: flex;
    list-style-type: none;
    margin: 0;
    padding: 0;
@@ -65,6 +66,7 @@ header span{
 }
 
 .hamburger{
+    display: none;
     background: none;
     border: none;
     color: var(--charcoal-blue);
@@ -83,7 +85,7 @@ header span{
 }
 
 .navigation {
-    display: none;
+    display: block;
     background-color: var(--charcoal-blue);
 }
 
@@ -125,7 +127,9 @@ main h2{
 /*About Me Section*/
 
 .about-me{
-   padding: 1rem;
+   background-color: var(--grey-olive);
+   display: flex;
+   flex-direction: column;
 }
 
 .about-me h2{
@@ -136,17 +140,17 @@ main h2{
 }
 
 .about-me p{
-   background-color: var(--grey-olive);
    color: black;
    padding: 1rem;
    text-align: center;
    line-height: 2rem;
+   flex: 1;
 }
 
 /*Student Photo Section*/
 
 .student-photo{
-    padding: 1rem;
+    text-align: center;
     background-color: var(--grey-olive);
 }
 
@@ -164,6 +168,7 @@ main h2{
     aspect-ratio: 1/1;
     object-fit: cover;
     margin: 1rem auto;
+    border-radius: 12px;
 }
 
 /*Web Certificate Courses*/
@@ -177,6 +182,54 @@ main h2{
     color: white;
     text-align: center;
     padding: 0.7rem;
+}
+/*Web Certificate Courses Cards*/
+
+.course-btns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.course-btns button{
+    padding: 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.course-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.course-card{
+    background-color: var(--grey-olive);
+    border: 1px solid var(--charcoal-blue);
+    padding: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.course-card.completed{
+    background-color: var(--grey-olive);
+    color: black;
+}
+
+.course-card.not-completed{
+    background-color: var(--apricot-cream);
+    
+}
+
+.course-card h3{
+    color:  var(--charcoal-blue);
+}
+
+.course-work{
+    text-align: center;
+    padding: 1rem;
 }
 
 /*Footer*/
