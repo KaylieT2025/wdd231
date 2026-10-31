@@ -122,7 +122,7 @@ function displayCourses(courseArray) {
 
     });
 
-    const credits = courseArray.reduce((total, courses) => total + course.credits, 0);
+    const credits = courseArray.reduce((total, course) => total + course.credits, 0);
     totalCredits.textContent = credits;
 }
 
