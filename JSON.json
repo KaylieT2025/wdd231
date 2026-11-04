@@ -1,0 +1,24 @@
+{
+    "familyName": "Wilby",
+    "moveInDate": "10-31-2026",
+    "numberOfFamilyMembers": 3,
+    "visitByBishopric": false,
+    "indivisuals":[
+        {
+            "name": "Mary",
+            "gender": "Female",
+            "birthdate": "2-21-2000"
+        },
+        {
+            "name": "Max",
+            "gender": "Male",
+            "birthdate": "9-10-2001"
+        },
+        {
+            "name": "Tim",
+            "gender": "Male",
+            "birthdate": "2-15-2025"
+        }
+
+    ]
+}
