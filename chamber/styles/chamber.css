@@ -1,8 +1,8 @@
 :root{
 
-    --aquamarine: #a0ecd0ff;
-    --coffee-bean: #100007ff;
-    --burnt-peach: #f9724dff;
+    --primary-color: #a0ecd0ff;
+    --secondary-color: #100007ff;
+    --bachground-color: #EBEBEB;
 }
 
 body{
