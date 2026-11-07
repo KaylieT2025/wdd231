@@ -1,0 +1,11 @@
+:root{
+
+    --aquamarine: #a0ecd0ff;
+    --coffee-bean: #100007ff;
+    --burnt-peach: #f9724dff;
+}
+
+body{
+
+    font-family: "IBM Plex Serif", serif;
+}
