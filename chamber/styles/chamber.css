@@ -1,11 +1,104 @@
+/*Colors*/
 :root{
 
     --primary-color: #a0ecd0ff;
     --secondary-color: #100007ff;
-    --bachground-color: #EBEBEB;
+    --background-color: #EBEBEB;
+}
+
+*{
+    padding: 0;
+    margin: 0;
 }
 
 body{
 
     font-family: "IBM Plex Serif", serif;
+    background-color: var(--background-color);
+}
+
+/*Header and Nav Base.*/
+
+header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10 5%;
+    border-bottom: solid 2px var(--secondary-color);
+}
+
+
+header img {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
+
+header.gilbert-span{
+    font-weight: 700;
+}
+
+
+nav{
+    font-weight: 600;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 0.8rem 10px;
+    border-bottom: solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/*Hamburger Menu*/
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+
+    content: "\00D7";
+}
+
+.navigation a:hover{
+    background-color: var(--background-color);
+    color: black;
+}
+
+.navigation li.current-class a{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/*Span*/
+
+body span{
+    padding-top: 5px;
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 25px;
 }
