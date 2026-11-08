@@ -118,3 +118,43 @@ footer{
     color: var(--secondary-color);
     border-top: solid 2px var(--secondary-color);
 }
+
+.chamber-info{
+    text-align: left;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+/*.socials img{
+    width: 30px;
+    height: 100%;
+}*/
+
+.student-info{
+    text-align: left;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--secondary-color) solid 1px;
+    border-radius: 22px;
+}
+
+.socials img{
+
+    height: 30px;
+    width: 30px;
+}
+
+.socials a:hover{
+    background-color: var(--background-color);  
+}
