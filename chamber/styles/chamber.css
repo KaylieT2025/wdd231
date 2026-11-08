@@ -110,6 +110,10 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 5%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-top: solid 2px var(--secondary-color);
